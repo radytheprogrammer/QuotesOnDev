@@ -4,9 +4,13 @@
 Sample API call using RESTapi from the client computer
 
 $(function() {
+
     //this is your event listener
-    $('.randomQuote').on('click', function(e) {
+    
+    $('.randomQuote').on('click', function(e) 
+    
       $.ajax({
+      
         method: 'get',
         url:
           red_vars.rest_url + 'wp/v2/posts?filter[orderby]=rand&filter[posts_per_page]=10'
